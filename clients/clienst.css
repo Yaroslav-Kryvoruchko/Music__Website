@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  outline: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 7vh;
+  background-color: rgba(66, 197, 190, 1);
+  position: fixed;
+  top: 0;
+}
+
+.header_items {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50vw;
+  list-style: none;
+}
+
+#main-photo {
+  width: 43px;
+  height: 39px;
+}
+
+.header_item img {
+  width: 25px;
+  height: 25px;
+  margin: 0 0.25rem;
+}
+
+.header_item a {
+  text-decoration: none;
+  color: white;
+  padding: 1.3rem 0.5rem;
+  cursor: pointer;
+}
+
+.header_item a:hover {
+  border-top: 4px solid black;
+}
+
+#sec-1 {
+  background: url("https://classpic.ru/wp-content/uploads/2015/12/7036/Igra-na-gitare.jpg")
+    left 10% bottom 70% / cover no-repeat border-box;
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+#sec-1 h1 {
+    color: white;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+#sec-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    background: black;
+    padding: 3rem 0;
+    border-bottom: 2px solid white;
+}
+
+.sec-2--items {
+    list-style: none;
+    padding: 0;
+    margin: 0 3rem;
+}
+
+.sec-2--item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 25vw;
+    margin: 3rem 0;
+}
+
+.sec-2--item h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #42C5BE;
+}
+
+.items__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.items__image img {
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
+.items__paragrath p {
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 400;
+    width: 70%;
+    margin-bottom: 2rem;
+}
+
+.items__paragrath button {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    cursor: pointer;
+
+    transition: all 0.4s ease 0s;
+}
+
+.items__paragrath button:hover {
+    border-color: #42C5BE;
+    color: #42C5BE;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    background: black;
+    padding: 2rem;
+    text-align: center;
+}
+
+footer p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: white;
+}
+
