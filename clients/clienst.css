@@ -28,6 +28,7 @@ header {
   background-color: rgba(66, 197, 190, 1);
   position: fixed;
   top: 0;
+  z-index: 10;
 }
 
 .header_items {
@@ -56,102 +57,159 @@ header {
   cursor: pointer;
 }
 
+#header__img:hover {
+  border-top: none;
+}
+
 .header_item a:hover {
   border-top: 4px solid black;
+}
+
+.dropdown {
+  padding: 0;
+}
+
+.dropdown__item {
+  background: #42c5be;
+  border-top: 4px solid #42c5be;
+  text-align: center;
+  width: 120px;
+}
+
+.dropdown__item:hover {
+  border-top: 4px solid black;
+  transition: 0s ease 0s;
+}
+
+.dropdown__item a:hover {
+  border-top: none;
+}
+
+li {
+  display: block;
+  float: left;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+
+ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
+  visibility: visible;
+  opacity: 1;
+  display: block;
 }
 
 #sec-1 {
   background: url("https://classpic.ru/wp-content/uploads/2015/12/7036/Igra-na-gitare.jpg")
     left 10% bottom 70% / cover no-repeat border-box;
-    width: 100vw;
-    height: 20vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 4rem;
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
 }
 
 #sec-1 h1 {
-    color: white;
-    font-size: 3rem;
-    font-weight: 500;
+  color: white;
+  font-size: 3rem;
+  font-weight: 500;
 }
 
 #sec-2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    background: black;
-    padding: 3rem 0;
-    border-bottom: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  background: black;
+  padding: 3rem 0;
+  border-bottom: 2px solid white;
 }
 
 .sec-2--items {
-    list-style: none;
-    padding: 0;
-    margin: 0 3rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .sec-2--item {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    width: 25vw;
-    margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 25vw;
+  margin: 3rem 0;
 }
 
 .sec-2--item h1 {
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: #42C5BE;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #42c5be;
 }
 
 .items__image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .items__image img {
-    border-radius: 50%;
-    margin-right: 2rem;
+  border-radius: 50%;
+  margin-right: 2rem;
 }
 
 .items__paragrath p {
-    color: white;
-    font-size: 0.9rem;
-    font-weight: 400;
-    width: 70%;
-    margin-bottom: 2rem;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 400;
+  width: 70%;
+  margin-bottom: 2rem;
 }
 
 .items__paragrath button {
-    background: transparent;
-    border: 2px solid white;
-    color: white;
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
-    width: 100%;
-    cursor: pointer;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  cursor: pointer;
 
-    transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
 }
 
 .items__paragrath button:hover {
-    border-color: #42C5BE;
-    color: #42C5BE;
+  border-color: #42c5be;
+  color: #42c5be;
 }
 
 footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    background: black;
-    padding: 2rem;
-    text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  background: black;
+  padding: 2rem;
+  text-align: center;
 }
 
 footer p {
@@ -159,4 +217,3 @@ footer p {
   font-weight: 500;
   color: white;
 }
-

@@ -28,6 +28,7 @@ header {
   background-color: rgba(66, 197, 190, 1);
   position: fixed;
   top: 0;
+  z-index: 10;
 }
 
 .header_items {
@@ -56,8 +57,61 @@ header {
   cursor: pointer;
 }
 
+#header__img:hover {
+  border-top: none;
+}
+
 .header_item a:hover {
   border-top: 4px solid black;
+}
+
+.dropdown {
+  padding: 0;
+}
+
+.dropdown__item {
+  background: #42c5be;
+  border-top: 4px solid #42c5be;
+  text-align: center;
+  width: 120px;
+}
+
+.dropdown__item:hover {
+  border-top: 4px solid black;
+  transition: 0s ease 0s;
+}
+
+.dropdown__item a:hover {
+  border-top: none;
+}
+
+li {
+  display: block;
+  float: left;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+
+ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
+  visibility: visible;
+  opacity: 1;
+  display: block;
 }
 
 #sec-1 {
@@ -96,7 +150,7 @@ header {
   margin-top: 5rem;
 }
 
-#sec-2 button {
+#sec-2 a {
   background: transparent;
   border: 2px solid #42c5be;
   color: #42c5be;
@@ -104,22 +158,23 @@ header {
   font-weight: 500;
   padding: 0.5rem 1.5rem;
   cursor: pointer;
+  text-decoration: none;
 
   transition: all 0.4s ease 0s;
 }
 
-#sec-2 button:hover {
+#sec-2 a:hover {
   color: white;
   border-color: white;
 }
 
 #sec-2 div {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 60vw;
-    margin-top: 2rem;
-    padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 60vw;
+  margin-top: 2rem;
+  padding: 2rem 0;
 }
 
 .info--price__items {
@@ -163,17 +218,17 @@ header {
 }
 
 footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    background: black;
-    padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  background: black;
+  padding: 1.5rem;
 }
 
 footer p {
-    color: white;
-    font-size: 0.9rem;
-    font-weight: 500;
-    text-align: center;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: center;
 }

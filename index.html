@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Music-Wedsite</title>
     <link rel="stylesheet" href="main.css" />
+    <script src="app.js" defer></script>
   </head>
   <body>
     <header>
       <ul class="header_items">
         <li class="header_item">
-          <a href=""
+          <a href="index.html" id="header__img"
             ><img
               src="https://static.wixstatic.com/media/ca2a5a_216bb35499f142708a30e38d72d72162.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01/ca2a5a_216bb35499f142708a30e38d72d72162.webp"
               alt=""
@@ -22,6 +23,9 @@
         </li>
         <li class="header_item">
           <a href="studio/studio.html">О СТУДИИ</a>
+          <ul class="dropdown">
+            <li class="dropdown__item"><a href="price/price.html">ЦЕНА</a></li>
+          </ul>
         </li>
         <li class="header_item">
           <a href="clients/clients.html">КЛИЕНТЫ</a>
@@ -42,12 +46,57 @@
         </li>
       </ul>
     </header>
+    <header id="mobile__header">
+      <ul class="mobile-header__items">
+        <li class="mobile-header__item">
+          <a href="index.html" id="header__img"
+            ><img
+              src="https://static.wixstatic.com/media/ca2a5a_216bb35499f142708a30e38d72d72162.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01/ca2a5a_216bb35499f142708a30e38d72d72162.webp"
+              alt=""
+              id="main-photo"
+          /></a>
+        </li>
+        <li class="mobile-header__item" id="seti">
+          <img
+            src="https://static.wixstatic.com/media/4f857b2e8a316c4e1ed16717a3d4ec8c.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01/4f857b2e8a316c4e1ed16717a3d4ec8c.webp"
+            alt=""
+          />
+          <img
+            src="https://static.wixstatic.com/media/89b1d2497b29ccbb7d37be1ec6ef0052.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01/89b1d2497b29ccbb7d37be1ec6ef0052.webp"
+            alt=""
+          />
+          <img
+            src="https://static.wixstatic.com/media/81af6121f84c41a5b4391d7d37fce12a.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01/81af6121f84c41a5b4391d7d37fce12a.webp"
+            alt=""
+          />
+        </li>
+        <li class="mobile-header__item">
+          <div class="menu-btn">
+            <div class="menu-btn__burger"></div>
+          </div>
+        </li>
+      </ul>
+    </header>
+    <div class="menu">
+      <div class="menu__items">
+        <a href="index.html">ГЛАВНАЯ</a>
+      </div>
+      <div class="menu__items">
+        <a href="studio/studio.html">О СТУДИИ</a>
+      </div>
+      <div class="menu__items">
+        <a href="price/price.html">ЦЕНА</a>
+      </div>
+      <div class="menu__items">
+        <a href="clients/clients.html">КЛИЕНТЫ</a>
+      </div>
+    </div>
     <main>
       <section id="sec-1">
         <div class="sec-1__items-one">
           <h1>VanMAr</h1>
           <p>СТУДИЯ ЗВУКОЗАПИСИ</p>
-          <button>ЗАБРОНИРОВАТЬ ЗАПИСЬ</button>
+          <a href="#sec-6">ЗАБРОНИРОВАТЬ ЗАПИСЬ</a>
         </div>
         <div class="sec-1__items-two">
           <div class="sec-1-items_center">
@@ -99,7 +148,46 @@
               </p>
             </div>
           </div>
+        </div>  
+      </div>
+      <div class="sec-1__items-two__mobile">
+        <div class="sec-1__item-two__mobile">
+          <img
+            src="https://static.wixstatic.com/media/ca2a5a_24b3a8dd6007433780627fd992504700.png/v1/fill/w_112,h_112,al_c,q_85/ca2a5a_24b3a8dd6007433780627fd992504700.webp"
+            alt=""
+          />
+          <span id="triangle-down__mobile"></span>
+          <h2>СВЕДЕНИЕ</h2>
+          <p>
+            Это текст. Кликните дважды, чтобы отредактировать и добавить
+            свой текст.
+          </p>
         </div>
+        <div class="sec-1__item-two__mobile">
+          <img
+            src="https://static.wixstatic.com/media/ca2a5a_961d0c44bee64552b9b8231158d48596.png/v1/fill/w_112,h_112,al_c,q_85/ca2a5a_961d0c44bee64552b9b8231158d48596.webp"
+            alt=""
+          />
+          <span id="triangle-down__mobile"></span>
+          <h2>ЗАПИСЬ</h2>
+          <p>
+            Это текст. Кликните дважды, чтобы отредактировать и добавить
+            свой текст.
+          </p>
+        </div>
+        <div class="sec-1__item-two__mobile">
+          <img
+            src="https://static.wixstatic.com/media/ca2a5a_bddff556ee184d6abf8506a8d0503dc7.png/v1/fill/w_112,h_112,al_c,q_85/ca2a5a_bddff556ee184d6abf8506a8d0503dc7.webp"
+            alt=""
+          />
+          <span id="triangle-down__mobile"></span>
+          <h2>МАСТЕРИНГ</h2>
+          <p>
+            Это текст. Кликните дважды, чтобы отредактировать и добавить
+            свой текст.
+          </p>
+        </div>
+      </div>
       </section>
       <section id="sec-2">
         <span id="sec-2__triangle--down"></span>
@@ -126,21 +214,21 @@
                 src="https://static.wixstatic.com/media/ca2a5a_bff264349bbe41dba7de4c8ada2dd85b.png/v1/fill/w_162,h_69,al_c,q_85,usm_0.66_1.00_0.01/ca2a5a_bff264349bbe41dba7de4c8ada2dd85b.webp"
                 alt=""
               />
-              <button>МАГНИТОФОНЫ</button>
+              <a href="studio/studio.html">МАГНИТОФОНЫ</a>
             </li>
             <li class="sec-3__item">
               <img
                 src="https://static.wixstatic.com/media/ca2a5a_6b71167ec7564a16ac75eb11bcc8833f.png/v1/fill/w_128,h_75,al_c,q_85,usm_0.66_1.00_0.01/ca2a5a_6b71167ec7564a16ac75eb11bcc8833f.webp"
                 alt=""
               />
-              <button>МИКШЕРЫ</button>
+              <a href="studio/studio.html">МИКШЕРЫ</a>
             </li>
             <li class="sec-3__item">
               <img
                 src="https://static.wixstatic.com/media/ca2a5a_ff0f9fb5a32147649d0d28e3c2f6638d.png/v1/fill/w_145,h_70,al_c,q_85,usm_0.66_1.00_0.01/ca2a5a_ff0f9fb5a32147649d0d28e3c2f6638d.webp"
                 alt=""
               />
-              <button>МИКРОФОНЫ</button>
+              <a href="studio/studio.html">МИКРОФОНЫ</a>
             </li>
           </ul>
         </div>
@@ -151,21 +239,21 @@
                 src="https://static.wixstatic.com/media/ca2a5a_05a1a6afdb09435dabc053207d348b35.png/v1/fill/w_164,h_54,al_c,q_85,usm_0.66_1.00_0.01/ca2a5a_05a1a6afdb09435dabc053207d348b35.webp"
                 alt=""
               />
-              <button>КОМПРЕССОРЫ</button>
+              <a href="studio/studio.html">КОМПРЕССОРЫ</a>
             </li>
             <li class="sec-3__item">
               <img
                 src="https://static.wixstatic.com/media/ca2a5a_76ee71fbedd942e28a7a2a97af5b7dfe.png/v1/fill/w_125,h_81,al_c,q_85,usm_0.66_1.00_0.01/ca2a5a_76ee71fbedd942e28a7a2a97af5b7dfe.webp"
                 alt=""
               />
-              <button>МОНИТОРЫ</button>
+              <a href="">МОНИТОРЫ</a>
             </li>
             <li class="sec-3__item">
               <img
                 src="https://static.wixstatic.com/media/ca2a5a_db7bedac94cd4ca8bf108eaa5be6ecc5.png/v1/fill/w_133,h_79,al_c,q_85,usm_0.66_1.00_0.01/ca2a5a_db7bedac94cd4ca8bf108eaa5be6ecc5.webp"
                 alt=""
               />
-              <button>ИНСТРУМЕНТЫ</button>
+              <a href="studio/studio.html">ИНСТРУМЕНТЫ</a>
             </li>
           </ul>
         </div>
@@ -184,7 +272,7 @@
               Чтобы удалить этот текст, нажмите один раз и выберите значок
               «Корзина».
             </p>
-            <button>СЛУШАТЬ БОЛЬШЕ МУЗЫКАНТОВ</button>
+            <a href="clients/clients.html">СЛУШАТЬ БОЛЬШЕ МУЗЫКАНТОВ</a>
           </div>
         </div>
       </section>
@@ -193,16 +281,16 @@
         <h1>ЦЕНЫ</h1>
         <div class="sec-5__items">
           <div class="sec-5__item">
-            <a href="">ЗАПИСЬ</a>
+            <a href="price/price.html">ЗАПИСЬ</a>
           </div>
           <div class="sec-5__item">
-            <a href="">СВЕДЕНИЕ</a>
+            <a href="price/price.html">СВЕДЕНИЕ</a>
           </div>
           <div class="sec-5__item">
-            <a href="">МАСТЕРИНГ</a>
+            <a href="price/price.html">МАСТЕРИНГ</a>
           </div>
           <div class="sec-5__item">
-            <a href="">ПРОДАКШН</a>
+            <a href="price/price.html">ПРОДАКШН</a>
           </div>
         </div>
       </section>
@@ -263,7 +351,10 @@
       </section>
     </main>
     <footer>
-      <p>© 2023 VanMar. Студия звукозаписи. Сайт создан на Wix.com <br>info@mysite.com |  Телефон: +7 (495) 000-00-00</p>
+      <p>
+        © 2023 VanMar. Студия звукозаписи. Сайт создан на Wix.com
+        <br />info@mysite.com | Телефон: +7 (495) 000-00-00
+      </p>
     </footer>
   </body>
 </html>
